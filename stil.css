@@ -1,6 +1,6 @@
 body{
     margin: 0rem;
-    background-image: url('slike/makaze_poz.jpg');
+    background-image: url('makaze_poz.jpg');
     background-size: contain;
 
     font-family: "Quintessential", serif;
@@ -141,7 +141,7 @@ nav{
 }
 
 #HERO{
-    background: url('slike/Hero.jpg');
+    background: url('Hero.jpg');
     background-position: -40rem;
     height: 95vh;
 
