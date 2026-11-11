@@ -21,7 +21,7 @@ h1, h2, h3, p{
 }
 
 img{
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.146);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
 }
 
 img:hover{
@@ -71,7 +71,7 @@ img:hover{
     font-size: 1.2rem;
     
 
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.146);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
 }
 
 #leteci{
@@ -364,7 +364,7 @@ footer{
 
     font-size: 1.2rem;
 
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.146);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
 
     border: none;
 
@@ -387,7 +387,7 @@ footer{
     border: none;
     color: white;
 
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.146);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
 }
 
 #sve_recenzije{
@@ -418,7 +418,7 @@ footer{
     width: 15%;
 
     height: 8rem;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.146);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
 
     animation: ulaz_recenzija 0.5s linear;
 }
