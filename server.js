@@ -28,7 +28,7 @@ const shema_rezencija=new shema({
     ime_korisnika: String,
     komentar_korisnika: String
 })
-const recenzija=mongoose.model("BANErecenzija" , shema_rezencija);
+const recenzija=mongoose.model("BANErecenzijas" , shema_rezencija);
 
 //serviranje svega
 server.use(express.static(__dirname));
