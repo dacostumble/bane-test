@@ -86,21 +86,19 @@ setInterval(()=>{
             obavestenje.style.display="none";
         }
 
-        else{
-            for(let i=0; i<n; i++){
-                let novi_ime=document.createElement("h3");
-                let novi_poruka=document.createElement("p");
-                let novi_div=document.createElement("div");
-                novi_div.className="recenzija";
+        for(let i=0; i<n; i++){
+            let novi_ime=document.createElement("h3");
+            let novi_poruka=document.createElement("p");
+            let novi_div=document.createElement("div");
+            novi_div.className="recenzija";
 
-                novi_ime.textContent=podaci[i].ime_korisnika;
-                novi_poruka.textContent=podaci[i].komentar_korisnika;
+            novi_ime.textContent=podaci[i].ime_korisnika;
+            novi_poruka.textContent=podaci[i].komentar_korisnika;
 
-                novi_div.append(novi_ime);
-                novi_div.append(novi_poruka);
+            novi_div.append(novi_ime);
+            novi_div.append(novi_poruka);
 
-                recenzije_div_rod.append(novi_div);
-            }
+            recenzije_div_rod.append(novi_div);
         }
     })
 
