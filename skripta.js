@@ -28,6 +28,15 @@ vidi_tim.addEventListener("click" , ()=>{
     })
 })
 
+let vidi_recenzije=document.getElementById("vidi_recenzije");
+let recenzije_div=document.getElementById("forma");
+
+vidi_recenzije.addEventListener("click" , ()=>{
+    recenzije_div.scrollIntoView({
+        behavior: "smooth"
+    })
+})
+
 //GALERIJA - prebrojava koliko ima slika
 
 let tekst=document.getElementById("galerija_posebno_naslov");
