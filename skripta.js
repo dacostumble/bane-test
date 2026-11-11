@@ -69,7 +69,7 @@ posalji.addEventListener("click" , ()=>{
                 ime: ime_recenzija.value,
                 poruka: poruka_recenzija.value,
                 datum: datum.toLocaleDateString("sr-RS"),
-                vreme: datum.toLocaleDateString("sr-RS")
+                vreme: datum.toLocaleTimeString("sr-RS")
             })
         })
         .then(odg=>odg.text())
