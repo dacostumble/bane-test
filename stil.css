@@ -391,8 +391,6 @@ footer{
 }
 
 #sve_recenzije{
-    height: 15rem;
-
     display: flex;
     justify-content: center;
     align-items: center;

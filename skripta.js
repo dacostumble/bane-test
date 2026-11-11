@@ -76,6 +76,35 @@ posalji.addEventListener("click" , ()=>{
 let recenzije_div_rod=document.getElementById("sve_recenzije");
 let obavestenje=document.getElementById("obavestenje");
 
+//prvo ucitavanje - bez vremena
+fetch("/prikazi_recenzije")
+.then(odg => odg.json())
+.then(podaci => {
+    let n=podaci.length;
+
+    if(n>0 && obavestenje){
+        obavestenje.style.display="none";
+    }
+
+    for(let i=0; i<n; i++){
+        let novi_ime=document.createElement("h3");
+        let novi_poruka=document.createElement("p");
+        let novi_div=document.createElement("div");
+        novi_div.className="recenzija";
+
+        novi_ime.textContent=podaci[i].ime_korisnika;
+        novi_poruka.textContent=podaci[i].komentar_korisnika;
+
+        novi_div.append(novi_ime);
+        novi_div.append(novi_poruka);
+
+        recenzije_div_rod.append(novi_div);
+    }
+})
+
+//NAREDNA UCITAVANJA - na svakih 5 sekundi
+
+recenzije_div_rod.innerHTML=` `;
 setInterval(()=>{
     fetch("/prikazi_recenzije")
     .then(odg => odg.json())
@@ -103,4 +132,4 @@ setInterval(()=>{
     })
 
     recenzije_div_rod.innerHTML=` `;
-}, 2000)
+}, 5000)
