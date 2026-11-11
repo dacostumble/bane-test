@@ -56,8 +56,8 @@ posalji.addEventListener("click" , ()=>{
                 "Content-Type": "application/json"
             },
             body:JSON.stringify({
-                ime: ime_recenzija,
-                poruka: poruka_recenzija
+                ime: ime_recenzija.value,
+                poruka: poruka_recenzija.value
             })
         })
         .then(odg=>odg.text())
