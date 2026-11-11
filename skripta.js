@@ -76,11 +76,12 @@ posalji.addEventListener("click" , ()=>{
 let recenzije_div_rod=document.getElementById("sve_recenzije");
 let obavestenje=document.getElementById("obavestenje");
 
+let n;
 //prvo ucitavanje - bez vremena
 fetch("/prikazi_recenzije")
 .then(odg => odg.json())
 .then(podaci => {
-    let n=podaci.length;
+    n=podaci.length;
 
     if(n>0 && obavestenje){
         obavestenje.style.display="none";
@@ -108,7 +109,7 @@ setInterval(()=>{
     fetch("/prikazi_recenzije")
     .then(odg => odg.json())
     .then(podaci => {
-        let n=podaci.length;
+        n=podaci.length;
 
         if(n>0 && obavestenje){
             obavestenje.style.display="none";
@@ -128,7 +129,7 @@ setInterval(()=>{
                 recenzije_div_rod.append(novi_div);
             }
         }
-    })
 
-    if(n>0 && obavestenje) recenzije_div_rod.innerHTML=` `;
+        if(n>0 && obavestenje) recenzije_div_rod.innerHTML=` `;
+    })
 }, 5000)
