@@ -33,7 +33,7 @@ vidi_tim.addEventListener("click" , ()=>{
 let tekst=document.getElementById("galerija_posebno_naslov");
 let slike=document.getElementsByClassName("frizura");
 
-n=slike.length;
+let n=slike.length;
 if(tekst!=null)
     tekst.textContent=`Galerija (${n})`;
 
@@ -76,17 +76,17 @@ posalji.addEventListener("click" , ()=>{
 let recenzije_div_rod=document.getElementById("sve_recenzije");
 let obavestenje=document.getElementById("obavestenje");
 
-let n;
+let br;
 //prvo ucitavanje - bez vremena
 fetch("/prikazi_recenzije")
 .then(odg => odg.json())
 .then(podaci => {
-    n=podaci.length;
+    br=podaci.length;
 
-    if(n>0 && obavestenje){
+    if(br>0 && obavestenje){
         obavestenje.style.display="none";
 
-        for(let i=0; i<n; i++){
+        for(let i=0; i<br; i++){
             let novi_ime=document.createElement("h3");
             let novi_poruka=document.createElement("p");
             let novi_div=document.createElement("div");
@@ -109,12 +109,12 @@ setInterval(()=>{
     fetch("/prikazi_recenzije")
     .then(odg => odg.json())
     .then(podaci => {
-        n=podaci.length;
+        br=podaci.length;
 
-        if(n>0 && obavestenje){
+        if(br>0 && obavestenje){
             obavestenje.style.display="none";
 
-            for(let i=0; i<n; i++){
+            for(let i=0; i<br; i++){
                 let novi_ime=document.createElement("h3");
                 let novi_poruka=document.createElement("p");
                 let novi_div=document.createElement("div");
@@ -130,6 +130,6 @@ setInterval(()=>{
             }
         }
 
-        if(n>0 && obavestenje) recenzije_div_rod.innerHTML=` `;
+        if(br>0 && obavestenje) recenzije_div_rod.innerHTML=` `;
     })
 }, 5000)
