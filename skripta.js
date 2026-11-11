@@ -96,7 +96,7 @@ fetch("/prikazi_recenzije")
     if(br>0 && obavestenje){
         obavestenje.style.display="none";
 
-        for(let i=0; i<br; i++){
+        for(let i=br-1; i>=0; i--){
             let novi_ime=document.createElement("h3");
             let novi_poruka=document.createElement("p");
             let novi_div=document.createElement("div");
@@ -124,7 +124,7 @@ setInterval(()=>{
         if(br>0 && obavestenje){
             obavestenje.style.display="none";
 
-            for(let i=0; i<br; i++){
+            for(let i=br-1; i>=0; i--){
                 let novi_ime=document.createElement("h3");
                 let novi_poruka=document.createElement("p");
                 let novi_div=document.createElement("div");
