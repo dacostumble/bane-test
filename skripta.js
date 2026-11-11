@@ -104,7 +104,6 @@ fetch("/prikazi_recenzije")
 
 //NAREDNA UCITAVANJA - na svakih 5 sekundi
 
-recenzije_div_rod.innerHTML=` `;
 setInterval(()=>{
     fetch("/prikazi_recenzije")
     .then(odg => odg.json())
