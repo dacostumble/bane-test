@@ -1,0 +1,418 @@
+body{
+    margin: 0rem;
+    background-image: url('slike/makaze_poz.jpg');
+    background-size: contain;
+
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    z-index: 0;
+}
+
+button{
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, p{
+    text-align: justify;
+}
+
+img{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.146);
+}
+
+img:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+#prikaz_cene_div_rod{
+    height: 100vh;
+    width: 99vw;
+
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 3;
+}
+
+#prikaz_cene_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+    backdrop-filter: blur(10px);
+
+    height: 100vh;
+    width: 99vw;
+}
+
+#prikaz_cene_div img{
+    width: 28rem;
+
+    border-radius: 1rem;
+}
+
+#prikaz_cene_div button{
+    padding: 0.8rem;
+    background-color: #bc811a;
+    color: white;
+
+    border: none;
+    font-size: 1.2rem;
+    
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.146);
+}
+
+#leteci{
+    position: fixed;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 1rem;
+
+    top: 89%;
+    left: 85%;
+
+    padding: 0.5rem;
+}
+
+#leteci img{
+    width: 4rem;
+    border-radius: 0.5rem;
+
+    background-color: white;
+}
+
+nav img{
+    width: 6rem;
+    box-shadow: none;
+}
+
+nav button, a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+
+    border: none;
+
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav a img{
+    width: 1.5rem;
+}
+
+button:hover{
+    cursor: grab;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3rem;
+    padding: 0.5rem;
+
+    background-color: rgb(239, 239, 239);
+
+    position: sticky;
+    top: 0rem;
+    z-index: 1;
+
+    height: 5vh;
+}
+
+#HERO{
+    background: url('slike/Hero.jpg');
+    background-position: -40rem;
+    height: 95vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 4rem;
+    color: white;
+}
+
+#HERO_txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#HERO h1{
+    font-size: 3rem;
+}
+
+#HERO h3{
+    font-size: 1.2rem;
+}
+
+.ime_sekcije, .opis_sekcije{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5rem;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.ime_sekcije h2{
+    color: #bc811a;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.ime_sekcije h2::after{
+    content: "";
+    display: block;
+    width: 12em;               
+    height: 1px;             
+    background-color: #bc811a;
+    margin: 10px auto 0;       
+    border-radius: 2px;    
+}
+
+.opis_sekcije p, a{
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+#nasa_prica_slike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 2rem;
+    overflow: hidden;
+    width: 99vw;
+
+    padding: 1rem;
+}
+
+#nasa_prica{
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+#prica{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#nasa_prica img{
+    width: 30rem;
+    
+}
+
+#nasa_prica p{
+    font-size: 1.5rem;
+}
+
+#slike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#slike img{
+    height: 30rem;
+}
+
+#usluge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    gap: 1.5rem;
+
+    flex-wrap: wrap;
+
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.usluga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    color:#bc811a;
+}
+
+.usluga img{
+    width: 2rem;
+}
+
+#galerija_radova_dugme_hero{
+    color: white;
+    text-decoration: none;
+
+    border: 1px solid white;
+    padding: 0.5rem;
+
+    font-size: 1.2rem;
+
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#galerija img{
+    height: 20rem;
+    
+}
+
+#galerija{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#galerija_posebno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#galerija_posebno img{
+    width: 10rem;
+}
+
+footer{
+    background-color: rgb(239, 239, 239);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+#forma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    padding: 0.5rem;
+}
+
+#forma input{
+    padding: 0.8rem;
+    width: 40%;
+
+    font-size: 1.2rem;
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.146);
+
+    border: none;
+
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#forma :nth-child(2){
+    height: 5rem;
+}
+
+#forma button{
+    width: 20%;
+    padding: 0.5rem;
+
+    font-size: 1.2rem;
+
+    background-color: #bc811a;
+    border: none;
+    color: white;
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.146);
+}
+
+#sve_recenzije{
+    height: 15rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 1rem;
+}
+
+.recenzija{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    background-color: white;
+    
+    border: 1.5px solid rgba(0, 0, 0, 0.049);
+    padding: 2rem;
+
+    width: 15%;
+
+    animation: recenzije 10s linear;
+}
