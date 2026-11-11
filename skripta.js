@@ -66,6 +66,7 @@ posalji.addEventListener("click" , ()=>{
 
             if(podatak=="200"){
                 window.alert("Recenzija je uspešno dodata. Pričekajte par sekundi kako bi se recenzija pojavila na ekranu. Hvala!");
+                window.location.reload();
             }
         })
     }
