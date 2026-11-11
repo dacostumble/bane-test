@@ -51,6 +51,7 @@ if(tekst!=null)
 let ime_recenzija=document.getElementById("ime_forma");
 let poruka_recenzija=document.getElementById("komentar_forma");
 let posalji=document.getElementById("predaj_formu");
+let datum=new Date();
 
 posalji.addEventListener("click" , ()=>{
     if(poruka_recenzija.value.trim()==""){
@@ -66,7 +67,9 @@ posalji.addEventListener("click" , ()=>{
             },
             body:JSON.stringify({
                 ime: ime_recenzija.value,
-                poruka: poruka_recenzija.value
+                poruka: poruka_recenzija.value,
+                datum: datum.getDate,
+                vreme: datum.getTime
             })
         })
         .then(odg=>odg.text())
@@ -99,14 +102,19 @@ fetch("/prikazi_recenzije")
         for(let i=br-1; i>=0; i--){
             let novi_ime=document.createElement("h3");
             let novi_poruka=document.createElement("p");
+            let datum_vreme=document.createElement("p");
+            datum_vreme.style.opacity="60%";
+
             let novi_div=document.createElement("div");
             novi_div.className="recenzija";
 
             novi_ime.textContent=podaci[i].ime_korisnika;
             novi_poruka.textContent=podaci[i].komentar_korisnika;
+            datum_vreme.textContent=`${podaci[i].datum}, ${podaci[i].vreme}`;
 
             novi_div.append(novi_ime);
             novi_div.append(novi_poruka);
+            novi_div.append(datum_vreme);
 
             recenzije_div_rod.append(novi_div);
         }
@@ -127,14 +135,19 @@ setInterval(()=>{
             for(let i=br-1; i>=0; i--){
                 let novi_ime=document.createElement("h3");
                 let novi_poruka=document.createElement("p");
+                let datum_vreme=document.createElement("p");
+                datum_vreme.style.opacity="60%";
+
                 let novi_div=document.createElement("div");
                 novi_div.className="recenzija";
 
                 novi_ime.textContent=podaci[i].ime_korisnika;
                 novi_poruka.textContent=podaci[i].komentar_korisnika;
+                datum_vreme.textContent=`${podaci[i].datum}, ${podaci[i].vreme}`;
 
                 novi_div.append(novi_ime);
                 novi_div.append(novi_poruka);
+                novi_div.append(datum_vreme);
 
                 recenzije_div_rod.append(novi_div);
             }

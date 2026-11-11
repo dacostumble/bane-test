@@ -26,7 +26,9 @@ server.use(cors());
 const shema=mongoose.Schema;
 const shema_rezencija=new shema({
     ime_korisnika: String,
-    komentar_korisnika: String
+    komentar_korisnika: String,
+    datum: Number,
+    vreme: Number
 })
 const recenzija=mongoose.model("banerecenzija" , shema_rezencija);
 
@@ -42,11 +44,15 @@ server.use(express.urlencoded({extended: true}));
 server.post('/upisi_recenziju' , async (zahtev, odg) => {
     const ime=zahtev.body.ime;
     const poruka=zahtev.body.poruka;
+    const datum=zahtev.body.datum;
+    const vreme=zahtev.body.vreme;
 
     try{
         await recenzija.create({
             ime_korisnika: ime,
-            komentar_korisnika: poruka
+            komentar_korisnika: poruka,
+            datum: datum,
+            vreme: vreme
         })
     }
     
