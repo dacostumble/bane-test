@@ -133,4 +133,4 @@ setInterval(()=>{
     })
 
     if(br>0 && obavestenje) recenzije_div_rod.innerHTML=` `;
-}, 5000)
+}, 10000)

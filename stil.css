@@ -420,7 +420,7 @@ footer{
     height: 8rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.146);
 
-    animation: ulaz_recenzija 1s linear;
+    animation: ulaz_recenzija 0.5s linear;
 }
 
 @keyframes ulaz_recenzija{
