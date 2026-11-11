@@ -68,8 +68,8 @@ posalji.addEventListener("click" , ()=>{
             body:JSON.stringify({
                 ime: ime_recenzija.value,
                 poruka: poruka_recenzija.value,
-                datum: datum.getDate,
-                vreme: datum.getTime
+                datum: datum.getDate(),
+                vreme: datum.getTime()
             })
         })
         .then(odg=>odg.text())
