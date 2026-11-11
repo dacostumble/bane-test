@@ -403,7 +403,7 @@ footer{
 
     flex-wrap: wrap;
 
-    animation: ulaz_recenzija 1s infinite linear;
+    animation: ulaz_recenzija 0.5s linear;
 }
 
 .recenzija{
