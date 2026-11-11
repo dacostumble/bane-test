@@ -74,6 +74,7 @@ posalji.addEventListener("click" , ()=>{
 //CITANJE RECENZIJA
 
 let recenzije_div_rod=document.getElementById("sve_recenzije");
+let obavestenje=document.getElementById("obavestenje");
 
 setInterval(()=>{
     fetch("/prikazi_recenzije")
@@ -81,8 +82,7 @@ setInterval(()=>{
     .then(podaci => {
         let n=podaci.length;
 
-        if(n>0){
-            let obavestenje=document.getElementById("obavestenje");
+        if(n>0 && obavestenje){
             obavestenje.style.display="none";
         }
 
