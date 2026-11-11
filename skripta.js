@@ -65,7 +65,7 @@ posalji.addEventListener("click" , ()=>{
             console.log(podatak);
 
             if(podatak=="200"){
-                window.alert("Recenzija je uspešno dodata.");
+                window.alert("Recenzija je uspešno dodata. Pričekajte par sekundi kako bi se recenzija pojavila na ekranu. Hvala!");
             }
         })
     }
@@ -129,7 +129,7 @@ setInterval(()=>{
                 recenzije_div_rod.append(novi_div);
             }
         }
-
-        if(br>0 && obavestenje) recenzije_div_rod.innerHTML=` `;
     })
+
+    recenzije_div_rod.innerHTML=` `;
 }, 5000)
