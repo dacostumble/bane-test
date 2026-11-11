@@ -103,4 +103,4 @@ setInterval(()=>{
     })
 
     recenzije_div_rod.innerHTML=` `;
-}, 500)
+}, 2000)
