@@ -27,8 +27,8 @@ const shema=mongoose.Schema;
 const shema_rezencija=new shema({
     ime_korisnika: String,
     komentar_korisnika: String,
-    datum: Number,
-    vreme: Number
+    datum: String,
+    vreme: String
 })
 const recenzija=mongoose.model("banerecenzija" , shema_rezencija);
 
