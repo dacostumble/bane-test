@@ -417,8 +417,6 @@ footer{
 
     width: 15%;
 
-    animation: recenzije 10s linear;
-
-    height: 20%;
+    height: 15rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.146);
 }
