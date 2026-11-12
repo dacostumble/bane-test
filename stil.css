@@ -416,12 +416,19 @@ footer{
 
     width: 15%;
 
-    height: 12rem;
+    height: 14rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
 
     animation: ulaz_recenzija 0.5s linear;
 
     border-top: 3px solid #bc811a;
+}
+
+.recenzija p{
+    margin-right: 0.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @keyframes ulaz_recenzija{
