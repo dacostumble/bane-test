@@ -424,13 +424,6 @@ footer{
     border-top: 3px solid #bc811a;
 }
 
-.recenzija p{
-    margin-right: 0.5rem;
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
 @keyframes ulaz_recenzija{
     0%{
         opacity: 0%;
