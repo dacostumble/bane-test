@@ -433,3 +433,36 @@ footer{
         opacity: 100%;
     }
 }
+
+#pre_posle div{
+    width: 15rem;
+}
+
+#pre_posle img{
+    transform: none; 
+}
+
+#pre_posle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#pre_posle_rod{
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(239, 239, 239, 0.333);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
