@@ -235,7 +235,7 @@ nav{
 
 #nasa_prica img{
     width: 30rem;
-    
+    height: 20rem;
 }
 
 #nasa_prica p{
@@ -465,4 +465,9 @@ footer{
     background-color: rgba(239, 239, 239, 0.378);
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+#pozadina_recenzije{
+    background-image: url('recenzija_poz.png');
+    background-size: cover;
 }
