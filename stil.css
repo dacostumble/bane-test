@@ -421,7 +421,7 @@ footer{
 
     animation: ulaz_recenzija 0.5s linear;
 
-    border-top: 3px solid #bc811a;
+    border-top: 5px solid #bc811a;
 }
 
 @keyframes ulaz_recenzija{
