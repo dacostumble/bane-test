@@ -31,11 +31,13 @@ vidi_tim.addEventListener("click" , ()=>{
 let vidi_recenzije=document.getElementById("vidi_recenzije");
 let recenzije_div=document.getElementById("forma");
 
-vidi_recenzije.addEventListener("click" , ()=>{
-    recenzije_div.scrollIntoView({
-        behavior: "smooth"
+if(vidi_recenzije){
+    vidi_recenzije.addEventListener("click" , ()=>{
+        recenzije_div.scrollIntoView({
+            behavior: "smooth"
+        })
     })
-})
+}
 
 //GALERIJA - prebrojava koliko ima slika
 
@@ -43,6 +45,7 @@ let tekst=document.getElementById("galerija_posebno_naslov");
 let slike=document.getElementsByClassName("frizura");
 
 let n=slike.length;
+
 if(tekst!=null)
     tekst.textContent=`Galerija (${n})`;
 
@@ -53,36 +56,38 @@ let poruka_recenzija=document.getElementById("komentar_forma");
 let posalji=document.getElementById("predaj_formu");
 let datum=new Date();
 
-posalji.addEventListener("click" , ()=>{
-    if(poruka_recenzija.value.trim()==""){
-        window.alert("Poštovani, polje za ostavljanje recenzije ne sme biti prazno.");
-        window.location.reload();
-    }
+if(posalji){
+    posalji.addEventListener("click" , ()=>{
+        if(poruka_recenzija.value.trim()==""){
+            window.alert("Poštovani, polje za ostavljanje recenzije ne sme biti prazno.");
+            window.location.reload();
+        }
 
-    else{
-        fetch("/upisi_recenziju" , {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body:JSON.stringify({
-                ime: ime_recenzija.value,
-                poruka: poruka_recenzija.value,
-                datum: datum.toLocaleDateString("sr-RS"),
-                vreme: datum.toLocaleTimeString("sr-RS")
+        else{
+            fetch("/upisi_recenziju" , {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body:JSON.stringify({
+                    ime: ime_recenzija.value,
+                    poruka: poruka_recenzija.value,
+                    datum: datum.toLocaleDateString("sr-RS"),
+                    vreme: datum.toLocaleTimeString("sr-RS")
+                })
             })
-        })
-        .then(odg=>odg.text())
-        .then(podatak => {
-            console.log(podatak);
+            .then(odg=>odg.text())
+            .then(podatak => {
+                console.log(podatak);
 
-            if(podatak=="200"){
-                window.alert("Recenzija je uspešno dodata. Pričekajte par sekundi kako bi se recenzija pojavila na ekranu. Hvala!");
-                window.location.reload();
-            }
-        })
-    }
-})
+                if(podatak=="200"){
+                    window.alert("Recenzija je uspešno dodata. Pričekajte par sekundi kako bi se recenzija pojavila na ekranu. Hvala!");
+                    window.location.reload();
+                }
+            })
+        }
+    })
+}
 
 //CITANJE RECENZIJA
 
