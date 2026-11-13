@@ -10,14 +10,38 @@ sakrij_cenovnik.addEventListener("click" , ()=>{
     cenovnik_div.style.visibility="hidden";
 })
 
+let vidi_sertifikate=document.getElementById("vidi_sertifikate");
+let sakrij_sertifikate=document.getElementById("zatvori_sert");
+let sert_div=document.getElementById("prikaz_sert_div_rod");
+
+if(vidi_sertifikate){
+    vidi_sertifikate.addEventListener("click" , ()=>{
+        sert_div.style.visibility="visible";
+    })
+}
+
+if(sakrij_sertifikate){
+    sakrij_sertifikate.addEventListener("click" , ()=>{
+        sert_div.style.visibility="hidden";
+    })
+}
+
 let vidi_galeriju=document.getElementById("vidi_galeriju");
-let galerija_pocetna=document.getElementById("poz");
+let galerija_pocetna=document.getElementById("galerija_slika");
 
 vidi_galeriju.addEventListener("click" , ()=>{
     galerija_pocetna.scrollIntoView({
         behavior: "smooth"
     })
 })
+
+let vidi_galeriju_druga_stranica=document.getElementById("galerija_radova_dugme_hero");
+
+if(vidi_galeriju_druga_stranica){
+    vidi_galeriju_druga_stranica.addEventListener("click" , ()=>{
+        window.location.href="galerija.html";
+    })
+}
 
 let vidi_tim=document.getElementById("vidi_tim");
 let tim=document.getElementById("tim");

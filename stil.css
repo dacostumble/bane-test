@@ -42,6 +42,21 @@ img:hover{
     z-index: 3;
 }
 
+/*isto za sertifikate*/
+
+#prikaz_sert_div_rod{
+    height: 100vh;
+    width: 99vw;
+
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 3;
+}
+
 #prikaz_cene_div{
     display: flex;
     justify-content: center;
@@ -56,13 +71,27 @@ img:hover{
     width: 99vw;
 }
 
-#prikaz_cene_div img{
-    width: 28rem;
+/*isto za sertifikate*/
 
-    border-radius: 1rem;
+#prikaz_sert_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+    backdrop-filter: blur(10px);
+
+    height: 100vh;
+    width: 99vw;
 }
 
-#prikaz_cene_div button{
+#prikaz_cene_div img, #prikaz_sert_div img{
+    width: 28rem;
+}
+
+#prikaz_cene_div button, #prikaz_sert_div button{
     padding: 0.8rem;
     background-color: #bc811a;
     color: white;
@@ -202,6 +231,22 @@ nav{
     text-decoration: none;
 }
 
+#video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 99vw;
+}
+
+#video video{
+    width: 100%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+}
+
 #nasa_prica_slike{
     display: flex;
     justify-content: center;
@@ -234,7 +279,7 @@ nav{
 }
 
 #nasa_prica img{
-    width: 30rem;
+    width: 35%;
     height: 20rem;
 }
 
@@ -462,9 +507,8 @@ footer{
     align-items: center;
     flex-direction: column;
 
-    background-color: rgba(239, 239, 239, 0.378);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #pozadina_recenzije{
