@@ -105,7 +105,7 @@ if(posalji){
                 console.log(podatak);
 
                 if(podatak=="200"){
-                    window.alert("Recenzija je uspešno dodata. Pričekajte par sekundi kako bi se recenzija pojavila na ekranu. Hvala!");
+                    window.alert("Recenzija je uspešno dodata. Pričekajte par sekundi kako bi se pojavila na ekranu. Hvala!");
                     window.location.reload();
                 }
             })
