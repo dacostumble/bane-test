@@ -29,11 +29,13 @@ if(sakrij_sertifikate){
 let vidi_galeriju=document.getElementById("vidi_galeriju");
 let galerija_pocetna=document.getElementById("galerija_slika");
 
-vidi_galeriju.addEventListener("click" , ()=>{
-    galerija_pocetna.scrollIntoView({
-        behavior: "smooth"
+if(vidi_galeriju){
+    vidi_galeriju.addEventListener("click" , ()=>{
+        galerija_pocetna.scrollIntoView({
+            behavior: "smooth"
+        })
     })
-})
+}
 
 let vidi_galeriju_druga_stranica=document.getElementById("galerija_radova_dugme_hero");
 
@@ -46,11 +48,13 @@ if(vidi_galeriju_druga_stranica){
 let vidi_tim=document.getElementById("vidi_tim");
 let tim=document.getElementById("tim");
 
-vidi_tim.addEventListener("click" , ()=>{
-    tim.scrollIntoView({
-        behavior: "smooth"
+if(vidi_tim){
+    vidi_tim.addEventListener("click" , ()=>{
+        tim.scrollIntoView({
+            behavior: "smooth"
+        })
     })
-})
+}
 
 let vidi_recenzije=document.getElementById("vidi_recenzije");
 let recenzije_div=document.getElementById("forma");

@@ -322,8 +322,6 @@ nav{
     align-items: center;
     gap: 1rem;
 
-    
-
     padding-left: 1rem;
     padding-right: 1rem;
 
@@ -514,4 +512,483 @@ footer{
 #pozadina_recenzije{
     background-image: url('recenzija_poz.png');
     background-size: cover;
+}
+
+/*ZA TELEFON*/
+
+@media (max-width: 768px){
+    #prikaz_cene_div_rod{
+        height: 100vh;
+        width: 99vw;
+
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        z-index: 3;
+    }
+
+    /*isto za sertifikate*/
+
+    #prikaz_sert_div_rod{
+        height: 100vh;
+        width: 99vw;
+
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        z-index: 3;
+    }
+
+    #prikaz_cene_div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 1.5rem;
+
+        backdrop-filter: blur(10px);
+
+        height: 100vh;
+        width: 99vw;
+    }
+
+    /*isto za sertifikate*/
+
+    #prikaz_sert_div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 1.5rem;
+
+        backdrop-filter: blur(10px);
+
+        height: 100vh;
+        width: 99vw;
+    }
+
+    #prikaz_cene_div img, #prikaz_sert_div img{
+        width: 80%;
+    }
+
+    #prikaz_cene_div button, #prikaz_sert_div button{
+        padding: 0.8rem;
+        background-color: #bc811a;
+        color: white;
+
+        border: none;
+        font-size: 1rem;
+        
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+    }
+
+    #leteci{
+        position: fixed;
+        z-index: 2;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        gap: 1rem;
+
+        top: 92%;
+        left: 2%;
+
+        padding: 0.5rem;
+    }
+
+    #leteci img{
+        width: 3rem;
+        border-radius: 0.5rem;
+
+        background-color: white;
+    }
+
+    #logo, #vidi_tim{
+        display: none;
+    }
+
+    nav img{
+        width: 3rem;
+        box-shadow: none;
+    }
+
+    nav button, a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+
+        border: none;
+
+        font-family: "Quintessential", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    nav a img{
+        width: 1rem;
+    }
+
+    button:hover{
+        cursor: grab;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 1rem;
+        padding: 0.5rem;
+
+        background-color: rgb(239, 239, 239);
+
+        position: sticky;
+        top: 0rem;
+        z-index: 1;
+
+        height: 5vh;
+    }
+
+    
+    #HERO{
+        background: url('Hero2.png');
+        background-position: -40rem;
+        height: 95vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 2rem;
+        color: white;
+    }
+
+    #HERO_txt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #HERO h1{
+        font-size: 2.5rem;
+    }
+
+    #HERO h3{
+        font-size: 1rem;
+    }
+
+    .ime_sekcije, .opis_sekcije{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 1rem;
+
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .ime_sekcije h2{
+        color: #bc811a;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .ime_sekcije h2::after{
+        content: "";
+        display: block;
+        width: 12em;               
+        height: 1px;             
+        background-color: #bc811a;
+        margin: 10px auto 0;       
+        border-radius: 2px;    
+    }
+
+    .opis_sekcije p, a{
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+    }
+
+    #video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 99vw;
+    }
+
+    #video video{
+        width: 100%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+    }
+
+    #nasa_prica_slike{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 2rem;
+        overflow: hidden;
+        width: 99vw;
+
+        padding: 1rem;
+    }
+
+    #nasa_prica{
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+
+    #prica{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #nasa_prica img{
+        width: 80%;
+    }
+
+    #nasa_prica p{
+        font-size: 1rem;
+    }
+
+    #slike{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #slike img{
+        height: 100%;
+    }
+
+    #usluge{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 2rem;
+
+        gap: 1.5rem;
+
+        flex-wrap: wrap;
+
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .usluga{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        color:#bc811a;
+    }
+
+    .usluga img{
+        width: 2rem;
+    }
+
+    #galerija_radova_dugme_hero{
+        color: white;
+        text-decoration: none;
+
+        border: 1px solid white;
+        padding: 0.5rem;
+
+        font-size: 1rem;
+
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    #galerija img{
+        height: 20rem;  
+    }
+
+    #galerija{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    #galerija_posebno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    #galerija_posebno img{
+        width: 100%;
+    }
+
+    footer{
+        background-color: rgb(239, 239, 239);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #forma{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 1rem;
+
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        padding: 0.5rem;
+    }
+
+    #forma input{
+        padding: 0.8rem;
+        width: 80%;
+
+        font-size: 1rem;
+
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+
+        border: none;
+
+        font-family: "Quintessential", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #forma :nth-child(2){
+        height: 3rem;
+    }
+
+    #forma button{
+        width: 40%;
+        padding: 0.5rem;
+
+        font-size: 1rem;
+
+        background-color: #bc811a;
+        border: none;
+        color: white;
+
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+    }
+
+    #sve_recenzije{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        gap: 1rem;
+
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        flex-wrap: wrap;
+    }
+
+    .recenzija{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: white;
+        
+        padding: 2rem;
+
+        width: 60%;
+
+        height: 10rem;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+
+        animation: ulaz_recenzija 0.5s linear;
+
+        border-top: 5px solid #bc811a;
+    }
+
+    #pre_posle div{
+        width: 100%;
+    }
+
+    #pre_posle img{
+        transform: none; 
+    }
+
+    #pre_posle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        gap: 1.5rem;
+
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    #pre_posle_rod{
+        width: 99vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #pozadina_recenzije{
+        background-image: url('recenzija_poz.png');
+        background-size: cover;
+    }
 }
