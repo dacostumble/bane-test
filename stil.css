@@ -599,7 +599,7 @@ footer{
         align-items: center;
         flex-direction: row;
 
-        gap: 1rem;
+        gap: 0.5rem;
 
         top: 85%;
         left: 2%;
@@ -845,7 +845,7 @@ footer{
     }
 
     .usluga h2{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #galerija_radova_dugme_hero{
