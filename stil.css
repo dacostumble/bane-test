@@ -841,11 +841,11 @@ footer{
     }
 
     .usluga img{
-        width: 1.5rem;
+        display: none;
     }
 
     .usluga h2{
-        font-size: 0.9rem;
+        font-size: 1.5rem;
     }
 
     #galerija_radova_dugme_hero{
