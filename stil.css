@@ -711,6 +711,10 @@ footer{
         text-align: center;
     }
 
+    .ime_sekcije h2::after{
+        display: none;   
+    }
+
     .opis_sekcije p, a{
         font-size: 1rem;
         color: black;
@@ -819,23 +823,7 @@ footer{
     }
 
     .usluga{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-
-        padding-left: 1rem;
-        padding-right: 1rem;
-
-        color:#bc811a;
-    }
-
-    .usluga img{
         display: none;
-    }
-
-    .usluga h2{
-        font-size: 0.8rem;
     }
 
     #galerija_radova_dugme_hero{
