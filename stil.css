@@ -519,7 +519,7 @@ footer{
 @media (max-width: 768px){
     #prikaz_cene_div_rod{
         height: 100vh;
-        width: 99vw;
+        width: 100vw;
 
         visibility: hidden;
         display: flex;
@@ -534,7 +534,7 @@ footer{
 
     #prikaz_sert_div_rod{
         height: 100vh;
-        width: 99vw;
+        width: 100vw;
 
         visibility: hidden;
         display: flex;
@@ -556,7 +556,7 @@ footer{
         backdrop-filter: blur(10px);
 
         height: 100vh;
-        width: 99vw;
+        width: 100vw;
     }
 
     /*isto za sertifikate*/
@@ -572,7 +572,7 @@ footer{
         backdrop-filter: blur(10px);
 
         height: 100vh;
-        width: 99vw;
+        width: 100vw;
     }
 
     #prikaz_cene_div img, #prikaz_sert_div img{
@@ -601,14 +601,14 @@ footer{
 
         gap: 1rem;
 
-        top: 90%;
+        top: 85%;
         left: 2%;
 
         padding: 0.5rem;
     }
 
     #leteci img{
-        width: 3rem;
+        width: 2.5rem;
         border-radius: 0.5rem;
 
         background-color: white;
@@ -669,7 +669,7 @@ footer{
     #HERO{
         background: url('Hero2.png');
         background-position: -40rem;
-        height: 95vh;
+        height: 93vh;
 
         display: flex;
         justify-content: center;
@@ -733,7 +733,7 @@ footer{
         justify-content: center;
         align-items: center;
         
-        width: 99vw;
+        width: 100vw;
     }
 
     #video video{
@@ -752,7 +752,7 @@ footer{
 
         gap: 2rem;
         overflow: hidden;
-        width: 99vw;
+        width: 100vw;
 
         padding: 1rem;
     }
@@ -789,18 +789,10 @@ footer{
         align-items: center;
         flex-direction: column;
         gap: 2rem;
-
-        width: 99vw;
-    }
-
-    #slike_rod{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     #slike img{
-        width: 100%;
+        width: 120%;
     }
 
     #usluge{
@@ -922,7 +914,7 @@ footer{
     }
 
     #forma button{
-        width: 40%;
+        width: 50%;
         padding: 0.5rem;
 
         font-size: 1rem;
@@ -990,7 +982,7 @@ footer{
     }
 
     #pre_posle_rod{
-        width: 99vw;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
