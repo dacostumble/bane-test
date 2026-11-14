@@ -601,7 +601,7 @@ footer{
 
         gap: 1rem;
 
-        top: 92%;
+        top: 90%;
         left: 2%;
 
         padding: 0.5rem;
@@ -647,9 +647,14 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
 
         gap: 1rem;
         padding: 0.5rem;
+
+        padding-left: 3rem;
+        padding-right: 3rem;
 
         background-color: rgb(239, 239, 239);
 
@@ -657,7 +662,7 @@ footer{
         top: 0rem;
         z-index: 1;
 
-        height: 5vh;
+        height: auto;
     }
 
     
@@ -683,7 +688,7 @@ footer{
     }
 
     #HERO h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #HERO h3{
@@ -784,10 +789,18 @@ footer{
         align-items: center;
         flex-direction: column;
         gap: 2rem;
+
+        width: 99vw;
+    }
+
+    #slike_rod{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #slike img{
-        height: 100%;
+        width: 100%;
     }
 
     #usluge{
