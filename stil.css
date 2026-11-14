@@ -608,7 +608,7 @@ footer{
     }
 
     #leteci img{
-        width: 3.5rem;
+        width: 2.5rem;
         border-radius: 0.5rem;
 
         background-color: white;
@@ -736,7 +736,7 @@ footer{
     }
 
     #video video{
-        width: 100%;
+        width: 80%;
         margin-left: 3rem;
         margin-right: 3rem;
 
@@ -770,8 +770,8 @@ footer{
 
     #prica{
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 
     #nasa_prica img{
@@ -817,12 +817,12 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
 
         padding: 2rem;
 
         gap: 1.5rem;
-
-        flex-wrap: wrap;
 
         padding-left: 3rem;
         padding-right: 3rem;
@@ -842,6 +842,10 @@ footer{
 
     .usluga img{
         width: 2rem;
+    }
+
+    .usluga h2{
+        font-size: 1rem;
     }
 
     #galerija_radova_dugme_hero{
