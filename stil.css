@@ -711,16 +711,6 @@ footer{
         text-align: center;
     }
 
-    .ime_sekcije h2::after{
-        content: "";
-        display: block;
-        width: 12em;               
-        height: 1px;             
-        background-color: #bc811a;
-        margin: 10px auto 0;       
-        border-radius: 2px;    
-    }
-
     .opis_sekcije p, a{
         font-size: 1rem;
         color: black;
@@ -845,7 +835,7 @@ footer{
     }
 
     .usluga h2{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     #galerija_radova_dugme_hero{
