@@ -650,6 +650,8 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
 
+        position: relative;
+
         gap: 1rem;
         padding: 0.5rem;
 
@@ -666,7 +668,7 @@ footer{
     #HERO{
         background: url('Hero2.png');
         background-position: -40rem;
-        height: 75vh;
+        height: 70vh;
 
         display: flex;
         justify-content: center;
@@ -807,6 +809,7 @@ footer{
 
     #slike img{
         width: 80%;
+        height: 35%;
     }
 
     #usluge{
