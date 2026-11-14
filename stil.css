@@ -600,15 +600,16 @@ footer{
         flex-direction: row;
 
         gap: 0.5rem;
+        width: 100vw;
 
-        top: 88%;
-        left: 2%;
+        left: 0%;
+        top: 90%;
 
         padding: 0.5rem;
     }
 
     #leteci img{
-        width: 2.5rem;
+        width: 2.9rem;
         border-radius: 0.5rem;
 
         background-color: white;
