@@ -141,7 +141,7 @@ fetch("/prikazi_recenzije")
             let novi_div=document.createElement("div");
             novi_div.className="recenzija";
 
-            if(podaci[i].ime_korisnika=="undefined"){
+            if(podaci[i].ime_korisnika==""){
                 novi_ime.textContent="Anon. korisnik";
             }
             else novi_ime.textContent=podaci[i].ime_korisnika;
@@ -178,7 +178,7 @@ setInterval(()=>{
                 let novi_div=document.createElement("div");
                 novi_div.className="recenzija";
 
-                if(podaci[i].ime_korisnika=="undefined"){
+                if(podaci[i].ime_korisnika==""){
                     novi_ime.textContent="Anon. korisnik";
                 }
                 else novi_ime.textContent=podaci[i].ime_korisnika;
