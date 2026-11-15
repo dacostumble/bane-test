@@ -91,7 +91,7 @@ if(posalji){
             window.location.reload();
         }
 
-        else{
+        else{         
             fetch("/upisi_recenziju" , {
                 method: "POST",
                 headers: {
@@ -141,7 +141,11 @@ fetch("/prikazi_recenzije")
             let novi_div=document.createElement("div");
             novi_div.className="recenzija";
 
-            novi_ime.textContent=podaci[i].ime_korisnika;
+            if(podaci[i].ime_korisnika=="undefined"){
+                novi_ime.textContent="Anon. korisnik";
+            }
+            else novi_ime.textContent=podaci[i].ime_korisnika;
+            
             novi_poruka.textContent=podaci[i].komentar_korisnika;
             datum_vreme.textContent=`${podaci[i].datum}, ${podaci[i].vreme}`;
 
@@ -174,7 +178,11 @@ setInterval(()=>{
                 let novi_div=document.createElement("div");
                 novi_div.className="recenzija";
 
-                novi_ime.textContent=podaci[i].ime_korisnika;
+                if(podaci[i].ime_korisnika=="undefined"){
+                    novi_ime.textContent="Anon. korisnik";
+                }
+                else novi_ime.textContent=podaci[i].ime_korisnika;
+                
                 novi_poruka.textContent=podaci[i].komentar_korisnika;
                 datum_vreme.textContent=`${podaci[i].datum}, ${podaci[i].vreme}`;
 
@@ -188,4 +196,4 @@ setInterval(()=>{
     })
 
     if(br>0 && obavestenje) recenzije_div_rod.innerHTML=` `;
-}, 10000)
+}, 25000) //25 sekundi
