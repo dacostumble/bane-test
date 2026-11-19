@@ -104,6 +104,8 @@ img:hover{
 
 #prikaz_cene_div img, #prikaz_sert_div img{
     width: 28rem;
+
+    border-radius: 0.3rem;
 }
 
 #prikaz_cene_div button, #prikaz_sert_div button{
@@ -116,6 +118,8 @@ img:hover{
     
 
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+
+    border-radius: 0.3rem;
 }
 
 #leteci{
@@ -230,6 +234,7 @@ nav{
     text-align: center;
 }
 
+/*
 .ime_sekcije h2::after{
     content: "";
     display: block;
@@ -238,7 +243,7 @@ nav{
     background-color: #bc811a;
     margin: 10px auto 0;       
     border-radius: 2px;    
-}
+}*/
 
 .opis_sekcije p, a{
     font-size: 1.5rem;
@@ -260,6 +265,8 @@ nav{
     margin-right: 5rem;
 
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+
+    border-radius: 0.3em;   
 }
 
 #nasa_prica_slike{
@@ -296,6 +303,8 @@ nav{
 #nasa_prica img{
     width: 40%;
     height: 25rem;
+
+    border-radius: 0.3rem;
 }
 
 #nasa_prica p{
@@ -314,6 +323,8 @@ nav{
 
 #slike img{
     height: 30rem;
+
+    border-radius: 0.3rem;
 }
 
 #usluge{
@@ -357,6 +368,8 @@ nav{
     font-size: 1.2rem;
 
     background-color: rgba(255, 255, 255, 0);
+
+    border-radius: 0.3rem;
 }
 
 #galerija img{
@@ -388,6 +401,8 @@ nav{
 
 #galerija_posebno img{
     width: 10rem;
+
+    border-radius: 0.3rem;
 }
 
 footer{
@@ -434,6 +449,8 @@ footer a{
     font-family: "Quintessential", serif;
     font-weight: 400;
     font-style: normal;
+
+    border-radius: 0.3rem;
 }
 
 #forma :nth-child(2){
@@ -451,6 +468,8 @@ footer a{
     color: white;
 
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.096);
+
+    border-radius: 0.3rem;
 }
 
 #sve_recenzije{
@@ -485,6 +504,8 @@ footer a{
     animation: ulaz_recenzija 0.5s linear;
 
     border-top: 5px solid #bc811a;
+
+    border-radius: 0.3rem;
 }
 
 @keyframes ulaz_recenzija{
