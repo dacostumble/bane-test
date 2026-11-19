@@ -1,3 +1,21 @@
+let observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("prikazi");
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+document.querySelectorAll(".animacija").forEach(el => {
+    observer.observe(el);
+});
+
+/*******************************************/
+/*******************************************/
+/*******************************************/
+
 let prikazi_cenovnik=document.getElementById("vidi_cenovnik");
 let sakrij_cenovnik=document.getElementById("zatvori_cenovnik");
 let cenovnik_div=document.getElementById("prikaz_cene_div_rod");

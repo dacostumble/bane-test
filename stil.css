@@ -1,3 +1,18 @@
+.animacija {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.8s ease;
+}
+
+.animacija.prikazi {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*******************************************/
+/*******************************************/
+/*******************************************/
+
 body{
     margin: 0rem;
     background-image: url('makaze_poz.jpg');
