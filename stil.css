@@ -23,12 +23,10 @@
     }
 }
 
+/*Modifikovano iz megatrona, sklonjen overflow*/
+
 .info_bar
 {
-    animation-name: info_an;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
     color: white;
     display: flex;
     flex-direction: row;
@@ -38,10 +36,18 @@
     padding: 0.5rem;
 
     height: 3dvh;
+    width: 99vw;
+
+    overflow: hidden;
 }
 
 .info_bar p{
     color: white;
+
+    animation-name: info_an;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @media (max-width: 768px){
@@ -58,6 +64,7 @@
 .info_bar_rod 
 {
     background-color: black;
+    width: 99vw;
 }
 
 /*******************************************/
