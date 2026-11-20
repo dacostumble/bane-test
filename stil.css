@@ -9,6 +9,57 @@
     transform: translateY(0);
 }
 
+/*preuzeto iz megatrona*/
+@keyframes info_an 
+{
+    0% 
+    {
+        transform: translateX(80vw);
+    }
+
+    100%
+    {
+        transform: translateX(-120vw);
+    }
+}
+
+.info_bar
+{
+    animation-name: info_an;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 0.5rem;
+
+    height: 3dvh;
+}
+
+.info_bar p{
+    color: white;
+}
+
+@media (max-width: 768px){
+    .info_bar p{
+        white-space: nowrap;
+        font-size: 0.8rem;
+    }
+
+    .info_bar{
+        height: 2dvh;
+    }
+}
+
+.info_bar_rod 
+{
+    background-color: black;
+}
+
 /*******************************************/
 /*******************************************/
 /*******************************************/
