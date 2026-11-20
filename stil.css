@@ -108,6 +108,14 @@ img:hover{
     z-index: 3;
 }
 
+#dugmad_prikaz_cene{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
 /*isto za sertifikate*/
 
 #prikaz_sert_div_rod{

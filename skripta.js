@@ -19,14 +19,28 @@ document.querySelectorAll(".animacija").forEach(el => {
 let prikazi_cenovnik=document.getElementById("vidi_cenovnik");
 let sakrij_cenovnik=document.getElementById("zatvori_cenovnik");
 let cenovnik_div=document.getElementById("prikaz_cene_div_rod");
+let preuzmi_cenovnik=document.getElementById("preuzmi_cenovnik");
 
-prikazi_cenovnik.addEventListener("click" , ()=>{
-    cenovnik_div.style.visibility="visible";
-})
+if(prikazi_cenovnik){
+    prikazi_cenovnik.addEventListener("click" , ()=>{
+        cenovnik_div.style.visibility="visible";
+    })
+}
 
-sakrij_cenovnik.addEventListener("click" , ()=>{
-    cenovnik_div.style.visibility="hidden";
-})
+if(sakrij_cenovnik){
+    sakrij_cenovnik.addEventListener("click" , ()=>{
+        cenovnik_div.style.visibility="hidden";
+    })
+}
+
+if(preuzmi_cenovnik){
+    preuzmi_cenovnik.addEventListener("click" , ()=>{
+        let tlink=document.createElement("a");
+        tlink.href="Cenovnik.jpg";
+        tlink.download="Cenovnik.jpg";
+        tlink.click();
+    })
+}
 
 let vidi_sertifikate=document.getElementById("vidi_sertifikate");
 let sakrij_sertifikate=document.getElementById("zatvori_sert");
